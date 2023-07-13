@@ -25,21 +25,6 @@ const App = () => {
     window.localStorage.setItem('contacts', stringifiedContacts);
   }, [contacts]);
 
-  // componentDidMount() {
-  //   const stringifyContacts = localStorage.getItem('contacts');
-
-  //   if (stringifyContacts) {
-  //     this.setState({ contacts: JSON.parse(stringifyContacts) });
-  //   }
-  // }
-
-  // componentDidUpdate(_, prevState) {
-  //   if (prevState.contacts !== this.state.contacts) {
-  //     const stringifiedContacts = JSON.stringify(this.state.contacts);
-  //     localStorage.setItem('contacts', stringifiedContacts);
-  //   }
-  // }
-
   const onAddContacts = evt => {
     const contact = {
       id: nanoid(),
