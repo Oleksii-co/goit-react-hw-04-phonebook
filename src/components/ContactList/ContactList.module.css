@@ -1,0 +1,28 @@
+.contactList {
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contactList > li {
+  font-size: 20px;
+  font-weight: 400;
+  list-style: inside;
+}
+
+.contactList > li > button {
+  margin-left: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 0px;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.contactList > li > button:hover {
+  background-color: #3f00ff;
+  color: #ffffff;
+}
