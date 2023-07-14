@@ -11,7 +11,6 @@ const App = () => {
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
-    console.log(0);
     const stringifyContacts = window.localStorage.getItem('contacts');
 
     if (stringifyContacts) {
@@ -20,7 +19,6 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    console.log(1);
     const stringifiedContacts = JSON.stringify(contacts);
     window.localStorage.setItem('contacts', stringifiedContacts);
   }, [contacts]);
